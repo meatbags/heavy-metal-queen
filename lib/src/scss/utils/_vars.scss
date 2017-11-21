@@ -1,18 +1,17 @@
-$width: 800px;
+$width: 960px;
 
 // colour
 $black: #000;
 $darkGrey: #222;
 $white: #fff;
 $lightGrey: #aaa;
-$colourBackgroundGradient: linear-gradient($darkGrey, $lightGrey);
-$colourBackgroundGradientAlt: linear-gradient($lightGrey, $darkGrey);
+$colourBackground: $black;
 
 // type
 $fontStack: 'WorkSans', Arial, sans-serif;
-$fontSizeSmall: 20px;
-$fontSizeRegular: 28px;
-$fontSizeLarge: 60px;
+$fontSizeSmall: 12px;
+$fontSizeRegular: 20px;
+$fontSizeLarge: 32px;
 
 // index
 $indexBackground: -1;

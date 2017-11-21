@@ -46,6 +46,7 @@ function add_admin_post_types() {
 		'taxonomies' => array('category', 'post_tag'),
 		'supports' => array('title', 'editor', 'revisions', 'thumbnail')
 	));
+  remove_post_type_support('chapters', 'editor');
 }
 add_action('init', 'add_admin_post_types');
 

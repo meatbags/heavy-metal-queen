@@ -19,11 +19,6 @@
 </head>
 
 <body class="<?php echo join(' ', get_body_class(''));?>">
-
-<div class='background'></div>
-<div class='background-alt'></div>
-<div class='time text-large noselect'>time →</div>
-
 <div class="content">
 	<div class="wrapper">
 		<?php get_template_part('nav'); ?>

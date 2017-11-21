@@ -1,36 +1,39 @@
 <?php
 get_header();
 
-?>
-<div class='post'>
-  <div class='post__title noselect text-regular underlined'>
-    <?php echo get_bloginfo('description'); ?>
-  </div>
-</div>
-<?php
-
 $query = new WP_Query(array(
-  'post_type' => 'post',
+  'post_type' => 'chapters',
   'orderby' => 'menu_order'
 ));
 if ($query->have_posts()) {
   while ($query->have_posts()) {
       $query->the_post();
       $title = get_the_title();
-      $content = apply_filters('the_content', get_the_content());
-?>
-  <div class='post'>
-    <div class='post__title text-regular reveal-sibling noselect clickable'>
-      <?php echo $title; ?>
+      $pages = get_field('pages');?>
+
+    <div class='chapter' id='<?php echo $title;?>'>
+      <?php
+      foreach($pages as $page):
+        $type = $page['page_type'];
+        $src = $page['image']['sizes']['large'];
+        $srcParallax = ($type == 'parallax') ? $page['parallax_image']['sizes']['large'] : '';
+        ?>
+
+        <div class='page'>
+          <img src='<?php echo $src;?>'>
+          <?php if ($type == 'parallax'): ?>
+            <div class='parallax'>
+              <img src='<?php echo $srcParallax;?>'>
+            </div>
+          <?php endif; ?>
+        </div>
+
+      <?php endforeach; ?>
     </div>
-    <div class='post__body text-small reveal'>
-      <div class='post__body__inner reveal-inner'>
-        <?php echo $content; ?>
-      </div>
-    </div>
-  </div>
-<?php
+
+    <?php
   }
 }
+
 get_footer();
 ?>
