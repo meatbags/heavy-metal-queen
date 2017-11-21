@@ -1,0 +1,48 @@
+.title-page {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: visible;
+
+  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      height: auto;
+      width: 60%;
+    }
+
+    &.parallax-flicker {
+      transition: opacity $transitionFast;
+    }
+
+    &.background {
+      img {
+        height: 105%;
+        width: auto;
+      }
+    }
+
+    @media (max-width: $width) {
+      img {
+        width: 100%;
+      }
+
+      &.background {
+        img {
+          height: 95%;
+        }
+      }
+    }
+  }
+}

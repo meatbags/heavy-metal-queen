@@ -11,10 +11,6 @@ body {
   color: $white;
 }
 
-span {
-  font-size: inherit !important;
-}
-
 p {
   display: inline;
 
@@ -25,11 +21,11 @@ p {
 }
 
 .content {
+  margin-top: 110vh;
   width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding-bottom: 25vh;
 
   .wrapper {
     width: $width;
@@ -37,17 +33,5 @@ p {
     @media (max-width: $width) {
       width: 100%;
     }
-  }
-}
-
-.time {
-  position: absolute;
-  top: 0;
-  right: 20vw;
-  transform-origin: top right;
-  transform: rotate(-90deg);
-
-  @media (max-width: $width) {
-    display: none;
   }
 }

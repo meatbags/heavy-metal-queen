@@ -1,6 +1,20 @@
 <?php
 get_header();
+?>
 
+<div class='title-page'>
+  <div class='layer background'>
+    <img src='<?php echo get_template_directory_uri() . '/lib/images/queen_background.jpg'; ?>' />
+  </div>
+  <div class='layer parallax-flicker'>
+    <img src='<?php echo get_template_directory_uri() . '/lib/images/queen_glow.png'; ?>' />
+  </div>
+  <div class='layer'>
+    <img src='<?php echo get_template_directory_uri() . '/lib/images/queen_title.png'; ?>' />
+  </div>
+</div>
+
+<?php
 $query = new WP_Query(array(
   'post_type' => 'chapters',
   'orderby' => 'menu_order'
