@@ -1,4 +1,6 @@
 .title-page {
+  @extend .noselect;
+  
   top: 0;
   left: 0;
   position: absolute;
@@ -26,6 +28,12 @@
       transition: opacity $transitionFast;
     }
 
+    .title-prompt {
+      width: 50%;
+      height: 50%;
+      cursor: pointer;
+    }
+
     &.background {
       img {
         height: 105%;
@@ -44,5 +52,32 @@
         }
       }
     }
+  }
+}
+
+.prompt {
+  @extend .noselect;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: $transition;
+  z-index: $indexPrompt;
+  cursor: pointer;
+  padding: $space * 2;
+
+  &.pre {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  &:hover {
+    color: $colourHover;
+  }
+
+  &.active {
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-20px);
   }
 }

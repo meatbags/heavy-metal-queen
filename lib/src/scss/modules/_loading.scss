@@ -1,0 +1,45 @@
+@keyframes loading {
+  0% { width: 0%; left: 0; }
+  50% { width: 100%; right: 0; }
+  100% { width: 0%; right: 0; }
+}
+
+.loading-screen {
+  @extend .noselect;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: $indexLoading;
+  color: $colourHover;
+
+  .loading-screen__inner {
+    padding: $space;
+    padding-bottom: $space * 2;
+
+    .loading-message {
+      padding-bottom: $space / 2;
+    }
+
+    .loading-bar {
+      width: 100%;
+      height: $space;
+      position: relative;
+
+      .loading-bar__inner {
+        position: absolute;
+        height: 100%;
+        background: $colourHover;
+        animation: loading;
+        animation-duration: $transitionSlow;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+  }
+}

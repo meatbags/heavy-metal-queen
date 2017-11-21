@@ -1,0 +1,44 @@
+.nav {
+  @extend .noselect;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: $indexNav;
+  display: flex;
+  justify-content: flex-end;
+  padding: $space;
+
+  .nav-item {
+    padding: $space;
+    transition: $transition;
+
+    &:hover, &.active {
+      color: $colourHover;
+      cursor: pointer;
+    }
+  }
+}
+
+.status {
+  @extend .noselect;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: $indexNav;
+  display: flex;
+  justify-content: flex-end;
+  padding: $space;
+  pointer-events: none;
+  transition: $transition;
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+  }
+
+  .status-item {
+    padding: $space;
+  }
+}

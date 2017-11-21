@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   color: $white;
+  line-height: 1.25;
 }
 
 p {
@@ -21,7 +22,7 @@ p {
 }
 
 .content {
-  margin-top: 110vh;
+  margin-top: 100vh;
   width: 100%;
   min-height: 100vh;
   display: flex;

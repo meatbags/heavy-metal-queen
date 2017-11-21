@@ -6,15 +6,19 @@ $darkGrey: #222;
 $white: #fff;
 $lightGrey: #aaa;
 $colourBackground: $black;
+$colourHover: #cf3fe0;
 
 // type
 $fontStack: 'WorkSans', Arial, sans-serif;
 $fontSizeSmall: 12px;
 $fontSizeRegular: 20px;
-$fontSizeLarge: 32px;
+$fontSizeLarge: 28px;
 
 // index
-$indexBackground: -1;
+$indexPrompt: 2;
+$indexMenu: 3;
+$indexNav: 4;
+$indexLoading: 6;
 
 // spacing
 $space: 10px;
