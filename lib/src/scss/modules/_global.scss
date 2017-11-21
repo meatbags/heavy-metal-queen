@@ -1,0 +1,72 @@
+div, * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fontStack;
+  font-size: $fontSizeRegular;
+  margin: 0;
+  padding: 0;
+  color: $white;
+}
+
+span {
+  font-size: inherit !important;
+}
+
+p {
+  display: inline;
+
+  &:after {
+    content: "\a\a";
+    white-space: pre;
+  }
+}
+
+.background, .background-alt{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: $indexBackground;
+  background: $colourBackgroundGradient;
+}
+
+.background-alt {
+  opacity: 0;
+  background: $colourBackgroundGradientAlt;
+  transition: opacity $transitionSlow;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25vh;
+
+  .wrapper {
+    width: 800px;
+
+    @media (max-width: $width) {
+      width: 100%;
+    }
+  }
+}
+
+.time {
+  position: absolute;
+  top: 0;
+  right: 20vw;
+  transform-origin: top right;
+  transform: rotate(-90deg);
+
+  @media (max-width: $width) {
+    display: none;
+  }
+}

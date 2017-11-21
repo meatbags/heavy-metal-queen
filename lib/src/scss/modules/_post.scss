@@ -1,0 +1,24 @@
+.post {
+  width: 100%;
+  padding: $space;
+
+  .post__title {
+    padding-top: $space;
+    padding-bottom: $space;
+    &.active {
+      text-decoration: underline;
+    }
+  }
+
+  .post__body {
+    .post__body__inner {
+      width: 100%;
+      text-align: justify;
+
+      p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

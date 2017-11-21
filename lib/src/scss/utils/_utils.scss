@@ -1,0 +1,38 @@
+.text-regular {
+  font-size: $fontSizeRegular;
+}
+
+.text-small {
+  font-size: $fontSizeSmall;
+}
+
+.text-large {
+  font-size: $fontSizeLarge;
+}
+
+.reveal-sibling {
+
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.reveal {
+  overflow: hidden;
+  height: 0;
+  transition: $transition;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
