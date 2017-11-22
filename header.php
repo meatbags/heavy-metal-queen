@@ -4,6 +4,10 @@
 	<title><?php bloginfo('name'); ?></title>
 	<meta name="description" content="<?php bloginfo(); ?>">
 	<meta charset="utf-8" />
+	<meta property="og:url" content="http://www.heavymetalqueen.com" />
+	<meta property="og:title" content="Heavy Metal Queen"/>
+	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/lib/images/queen_og.jpg"/>
+	<meta property="og:site_name" content="Heavy Metal Queen"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
