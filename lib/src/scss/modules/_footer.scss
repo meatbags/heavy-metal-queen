@@ -1,4 +1,8 @@
 .footer {
-  height: 50vh;
   width: 100%;
+  text-align: center;
+
+  .footer__inner {
+    padding: $space * 2;
+  }
 }

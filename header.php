@@ -5,6 +5,7 @@
 	<meta name="description" content="<?php bloginfo(); ?>">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 	<?php wp_head(); ?>
 

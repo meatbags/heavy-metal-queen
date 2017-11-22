@@ -1,12 +1,13 @@
 .title-page {
   @extend .noselect;
-  
+
   top: 0;
   left: 0;
   position: absolute;
   width: 100%;
   height: 100vh;
   overflow: visible;
+  background: $black;
 
   .layer {
     position: absolute;

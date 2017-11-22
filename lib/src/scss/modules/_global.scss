@@ -10,6 +10,7 @@ body {
   padding: 0;
   color: $white;
   line-height: 1.25;
+  z-index: $indexBody;
 }
 
 p {
@@ -18,6 +19,37 @@ p {
   &:after {
     content: "\a\a";
     white-space: pre;
+  }
+}
+
+a, .close-menu, .chapter-item {
+  color: inherit;
+  text-decoration: none;
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover {
+    color: $colourHover;
+  }
+}
+
+.background-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $indexBackground;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity $transitionSlow;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &.active {
+    opacity: 0.5;
   }
 }
 

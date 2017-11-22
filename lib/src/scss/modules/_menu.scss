@@ -1,6 +1,7 @@
 .menu {
   @extend .noselect;
 
+  -webkit-transform: translateZ(0);
   position: fixed;
   top: 0;
   left: 0;
@@ -21,6 +22,17 @@
 
     .menu__inner-pad {
       padding: $space;
+    }
+
+    .menu-row {
+      transition: $transition;
+      opacity: 0;
+      transform: translateX(20px);
+
+      &.active {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
   }
 
