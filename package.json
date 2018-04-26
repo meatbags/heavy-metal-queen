@@ -1,0 +1,35 @@
+{
+  "name": "heavy-metal-queen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "webpack": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "sass": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meatbags/heavy-metal-queen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meatbags/heavy-metal-queen/issues"
+  },
+  "homepage": "https://github.com/meatbags/heavy-metal-queen#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-sass": "^4.0.1",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.6.0",
+    "webpack-preset": "^0.2.0",
+    "webpack-preset-babel": "^0.2.0"
+  }
+}

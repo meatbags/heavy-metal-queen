@@ -1,0 +1,57 @@
+Arguments: 
+  X:\xampp\htdocs\github\emsdk\node\8.9.1_64bit\bin\node.exe C:\Users\meatbags\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add --save-dev
+
+PATH: 
+  X:\xampp\htdocs\github\emsdk;X:\xampp\htdocs\github\emsdk\clang\e1.37.37_64bit;X:\xampp\htdocs\github\emsdk\node\8.9.1_64bit\bin;X:\xampp\htdocs\github\emsdk\python\2.7.13.1_64bit\python-2.7.13.amd64;X:\xampp\htdocs\github\emsdk\java\8.152_64bit\bin;X:\xampp\htdocs\github\emsdk\emscripten\1.37.37;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;X:\Programs\nodejs\;X:\Programs\putty\;C:\Program Files\dotnet\;C:\Python\Scripts\;C:\Python\;C:\Users\meatbags\AppData\Local\Microsoft\WindowsApps;C:\Users\meatbags\AppData\Local\atom\bin;C:\Users\meatbags\AppData\Local\GitHubDesktop\bin;C:\Users\meatbags\AppData\Roaming\npm;X:\Programs\ffmpeg\ffmpeg-20180329-e5819fa-win64-static\bin;X:\Programs\themekit;X:\Programs\youtube-dl
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.1
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "heavy-metal-queen",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+      "lib": "lib"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/meatbags/heavy-metal-queen.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/meatbags/heavy-metal-queen/issues"
+    },
+    "homepage": "https://github.com/meatbags/heavy-metal-queen#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Missing list of packages to add to your project.
+      at new MessageError (C:\Users\meatbags\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at Object.<anonymous> (C:\Users\meatbags\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:40587:13)
+      at Generator.next (<anonymous>)
+      at step (C:\Users\meatbags\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
+      at C:\Users\meatbags\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (C:\Users\meatbags\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:23451:28)
+      at Object.<anonymous> (C:\Users\meatbags\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:95:12)
+      at Object.run (C:\Users\meatbags\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:40599:19)
+      at run (C:\Users\meatbags\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:89113:20)
