@@ -8,7 +8,7 @@ module.exports = {
     'app.min': './lib/src/js/app.js'
   },
   output: {
-    library: 'rkw',
+    library: 'hmq',
     libraryTarget: 'var',
     path: path.resolve(__dirname, 'lib/build'),
     filename: '[name].js'

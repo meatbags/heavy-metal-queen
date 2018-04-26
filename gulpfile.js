@@ -2,8 +2,8 @@ var gulp = require("gulp"),
 	sass = require("gulp-sass"),
 	cleanCSS = require("gulp-clean-css"),
 	autoprefixer = require('gulp-autoprefixer'),
-	base = './lib/src/',
-	pathSCSS = base + 'scss/',
+	base = './lib/',
+	pathSCSS = base + 'src/scss/',
 	destCSS = base + 'build';
 
 gulp.task("sass", function(){

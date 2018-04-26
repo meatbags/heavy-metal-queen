@@ -1,9 +1,9 @@
 <div class='nav'>
   <div class='nav-item' data-target='#menu-chapters'>
-    CHAPTERS
+    Chapters
   </div>
   <div class='nav-item' data-target='#menu-about'>
-    ABOUT
+    About
   </div>
 </div>
 
@@ -51,12 +51,16 @@
   <div class='menu__inner'>
     <div class='menu__inner-pad'>&nbsp;</div>
     <div class='menu-row'><br /></div>
-    <div class='menu-row'>
-      Matt Weismantel is an artist working in blah
-    </div>
-    <div class='menu-row'>
-      blah, etc. etc lorem ipsum.
-    </div>
+    <div class='menu-row'>Hi my name is Matt, I am mostly an amateur artist, I have exhibited works<br /> in a few
+ 	    galleries and sold a handful of works. I’m a person with a lot of ideas and</div>
+	  <div class='menu-row'>a lot of stories to tell, these notions have been with me since I can remember and<br />
+	    have been a formulating and shaping constant. My work both consists of more</div>
+	  <div class='menu-row'>illustrative and more ‘artistic’ styles, with a focus mainly on people/portraits.<br />
+	  <br /></div>
+	  <div class='menu-row'>I have decided after so many years of being inspired by other story tellers and artists<br />
+	     to push myself to create and share a story, ‘Heavy Metal Queen,’ to free up some space</div>
+	  <div class='menu-row'>in my head and see what kind of response I can get with my illustrative and<br />
+	     storytelling abilities. This is just one of many stories I have to tell.<br /><br /></div>
     <div class='menu-row'><br /></div>
     <div class='menu-row'>
       <a href='https://www.instagram.com/mattcasey1789/' target='_blank'>INSTAGRAM</a>

@@ -5,11 +5,13 @@ div, * {
 body {
   font-family: $fontStack;
   font-size: $fontSizeRegular;
+  font-weight: normal;
+  letter-spacing: $letterSpacing;
+  line-height: $lineHeight;
   background-color: $colourBackground;
   margin: 0;
   padding: 0;
   color: $white;
-  line-height: 1.25;
   z-index: $indexBody;
 }
 

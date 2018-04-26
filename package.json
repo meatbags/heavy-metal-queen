@@ -22,14 +22,18 @@
   },
   "homepage": "https://github.com/meatbags/heavy-metal-queen#readme",
   "dependencies": {
+    "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.3",
-    "gulp-sass": "^4.0.1",
-    "uglifyjs-webpack-plugin": "^1.2.5",
-    "webpack": "^4.6.0",
+    "gulp-sass": "^3.2.1",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.4.1",
     "webpack-preset": "^0.2.0",
     "webpack-preset-babel": "^0.2.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.0.15"
   }
 }

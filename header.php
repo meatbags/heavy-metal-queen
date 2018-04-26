@@ -8,11 +8,11 @@
 	<meta property="og:title" content="Heavy Metal Queen"/>
 	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/lib/images/queen_og.jpg"/>
 	<meta property="og:site_name" content="Heavy Metal Queen"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+	<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/lib/build/jquery-3.2.1.min.js'></script>
 	<?php wp_head(); ?>
-
 	<script>
 		/* <![CDATA[ */
 		var themePath = '<?php echo get_template_directory_uri(); ?>';
@@ -22,7 +22,6 @@
 		/* ]]> */
 	</script>
 </head>
-
 <body class="<?php echo join(' ', get_body_class(''));?>">
 <div class="content">
 	<div class="wrapper">

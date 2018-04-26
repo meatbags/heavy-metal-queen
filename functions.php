@@ -1,7 +1,6 @@
 <?php
 function ajax_load(){
   header("Content-Type: text/html");
-
   $postCount = $_POST["postCount"];
   $offset = $_POST["offset"];
   $type = $_POST["type"];
@@ -70,7 +69,7 @@ function xb_filter_wp_title( $title )
 {
 	return $title . esc_attr( get_bloginfo( 'name' ) );
 }
-function xb_custom_pings( $comment ){
+function xb_custom_pings( $comment ) {
 	$GLOBALS['comment'] = $comment;
 	?>
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>"><?php echo comment_author_link(); ?></li>
@@ -93,8 +92,7 @@ function my_login_logo_one() {
 add_action( 'wp_enqueue_scripts', 'xb_load_scripts' );
 function xb_load_scripts()
 {
-	// remove woo styles
-	wp_enqueue_script( 'xbscript', get_stylesheet_directory_uri() . '/lib/build/app-min.js');
-	wp_register_style( 'xbstyle', get_stylesheet_directory_uri() . '/lib/build/style.css' );
-	wp_enqueue_style( 'xbstyle' );
+	wp_enqueue_script('xbscript', get_stylesheet_directory_uri() . '/lib/build/app.min.js');
+	wp_register_style('xbstyle', get_stylesheet_directory_uri() . '/lib/build/style.css' );
+	wp_enqueue_style('xbstyle' );
 }

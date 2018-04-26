@@ -3,7 +3,7 @@
 
 <div class='footer'>
   <div class='footer__inner'>
-    &copy; M Weismantel 2017
+    &copy; M Weismantel <?php echo date("Y"); ?>
   </div>
 </div>
 
