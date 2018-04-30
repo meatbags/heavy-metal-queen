@@ -5,7 +5,7 @@ get_header();
 <div class='loading-screen'>
   <div class='loading-screen__inner'>
     <div class='loading-message'>
-      LOADING
+      LOADING...
     </div>
     <div class='loading-bar'>
       <div class='loading-bar__inner'></div>

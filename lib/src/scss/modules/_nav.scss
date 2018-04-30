@@ -1,6 +1,5 @@
 .nav {
   @extend .noselect;
-
   -webkit-transform: translateZ(0);
   position: fixed;
   top: 0;
@@ -20,6 +19,18 @@
       cursor: pointer;
     }
   }
+
+  @media screen and (max-width: $mobile) {
+    justify-content: flex-start;
+    padding: $space;
+    padding-left: $space * 2;
+    background: black;
+
+    .nav-item {
+      padding: 0;
+      padding-right: $space;
+    }
+  }
 }
 
 .status {
@@ -35,6 +46,10 @@
   pointer-events: none;
   transition: $transition;
   opacity: 0;
+
+  @media screen and (max-width: $width) {
+    display: none;
+  }
 
   &.active {
     opacity: 1;
